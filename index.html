@@ -29,7 +29,78 @@ button {
 
 
 
-<input type="hidden" value="2 " id="2">
+<input type="hidden" value='  <!DOCTYPE html>
+
+    <head>
+<html>
+<head>
+<script>
+var bark = new Audio();
+bark.src = "bark.mp3";
+var meow = new Audio();
+meow.src = "meow.mp3";
+var horse = new Audio();	
+horse.src = "horse.mp3";
+var goose = new Audio();	
+goose.src = "goose.mp3";
+var parrot = new Audio();	
+parrot.src = "parrot.mp3";
+</script>
+        <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff66ff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+ 
+}
+ .active {
+  background-color: #ff944d;
+}
+body
+{
+  background-image: url("farm.jpg");
+ background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+img {
+  border-radius: 50%;
+}
+</style>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Háziállatok</title>
+</head>
+<body>
+<ul>
+  <li><a  class="active" href="Kezdooldal.html">Kezdőoldal</a></li>
+  <li><a href="A szerzorol.html">A szerzőről</a></li>
+  <li><a  href="Hasznalati utasitas.html">Használati utasítás</a></li>
+</ul>
+<a href="dog.html"><img onmouseover = "bark.play()" img src="dog.jpg" alt="Kutya" width="300" height="250"></a>
+<a href="cat.html"><img onmouseover = "meow.play()" src="cat.jpg" alt="Macska" width="300" height="250"></a>
+<a href="horse.html"><img onmouseover = "horse.play()" src="horse.jpg" alt="Ló" width="300" height="250"</a>
+<a href="goose.html"><img onmouseover = "goose.play()" src="goose.jpg" alt="Liba" width="300" height="250"</a>
+<a href="parrot.html"><img onmouseover = "parrot.play()" src="parrot.jpg" alt="Papagáj"  width="300" height="250"</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    
+</html>' id="2">
 
 
 
@@ -37,19 +108,1899 @@ button {
 
 
 
-<input type="hidden" value="3" id="3">
-<input type="hidden" value="4" id="4">
-<input type="hidden" value="5" id="5">
-<input type="hidden" value="8" id="8">
-<input type="hidden" value="List<Katalogus> lista = new List<Katalogus>(); protected void Page_Load(object sender, EventArgs e) { if (!IsPostBack) { FilldDDL();                FillGrid();            }        }        protected void Button1_Click(object sender, EventArgs e)        {            FillGrid();        }        protected void FillOsztaly()        {            string sor;            StreamReader reader = new StreamReader(Server.MapPath('~/katalogus.txt'));            while((sor=reader.ReadLine())!= null)            {                Katalogus item = new Katalogus();                string[] line = sor.ToString().Split('|');                if (line.Length < 2)                {                    break;                }                item.Eloado = line[0].Trim();                item.Albumcime = line[1].Trim();                item.Mufaj = line[2].Trim();                item.Kiadaseve = line[3].Trim();                item.Kiadohaz = line[4].Trim();                item.Boritokep = line[5].Trim();               // item.Boritokep = '~'+line[5].Trim();                lista.Add(item);            }            reader.Close();        }        protected void FilldDDL()        {            FillOsztaly();            DropDownList1.Items.Add(' -Valaszd ki a mufajt !- ');            DropDownList1.Items.AddRange(lista.Select(i => new ListItem(i.Mufaj)).Distinct().ToArray());            DropDownList2.Items.Add(' -Valaszd ki a kiadas evet !- ');            DropDownList2.Items.AddRange(lista.Select(i => new ListItem(i.Kiadaseve)).Distinct().ToArray());        }        protected void FillGrid()        {            FillOsztaly();            List<Katalogus> eredmeny = lista;            if(TextBox1.Text != '')            {                eredmeny = eredmeny.FindAll(i => i.Eloado.Contains(TextBox1.Text));              }            if (TextBox2.Text != '')            {                eredmeny = eredmeny.FindAll(i => i.Albumcime.Contains(TextBox2.Text));            }            if(DropDownList1.SelectedIndex > 0)            {                eredmeny = eredmeny.FindAll(i => i.Mufaj.Contains(DropDownList1.SelectedValue));            }            if (DropDownList2.SelectedIndex > 0)            {                eredmeny = eredmeny.FindAll(i => i.Kiadaseve.Contains(DropDownList2.SelectedValue));            }            if (TextBox3.Text != '')            {                eredmeny = eredmeny.FindAll(i => i.Kiadohaz.Contains(TextBox3.Text));            }            GridView1.DataSource = eredmeny;            GridView1.DataBind();        }    }}" id="9">
-<input type="hidden" value="10" id="10">
-<input type="hidden" value="11" id="11">
-<input type="hidden" value="13" id="13">
-<input type="hidden" value="14" id="14">
-<input type="hidden" value="17" id="17">
-<input type="hidden" value="19" id="19">
-<input type="hidden" value="21" id="21">
-<input type="hidden" value="22" id="22">
+<input type="hidden" value='
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="files/style1.css">
+body {
+  background-color: khaki;
+  }
+  
+  .map{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 80%;
+    height: 150%;
+  }
+  
+  ul {
+    top:8%;
+    left: 0px;
+    position: absolute;
+    list-style-type: none;
+    overflow: hidden;
+    width:100%;
+    background-color: #C4FEA9;
+  }
+  #li1{
+    margin-left: 20%;
+  }
+  li {
+    float: left;
+    width: 20%;
+  }
+  
+  li a {
+    display: block;
+    color: #487F2E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:  #5ca13b;
+    color: #C4FEA9;
+  
+  }
+   .active {
+    background-color: #487F2E;
+    color: #C4FEA9;
+  }
+  
+  .forditott{
+    writing-mode: vertical-lr;
+   text-orientation: upright;
+   font-size: 600%;
+   color: #487F2E;
+  }
+  
+  h1{
+    color:#487F2E;
+    text-align: center;
+  }
+  .alcim{
+    color: #487F2E;
+    font-size: 170%;
+    font-weight: bold;
+    text-align: center;
+  }
+    
+   #albani {
+    position: absolute;
+    top: 240%;
+    left: 43%;
+      font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+    width:5%;
+  }
+  #bh {
+    position: absolute;
+      top: 140%;
+      left: 27%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #bulgari {
+    position: absolute;
+      top: 216%;
+      left: 83%;
+   width:5%;
+   font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #horva {
+    position: absolute;
+      top: 80%;
+      left: 27%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #magya {
+    position: absolute;
+      top: 42%;
+      left: 29%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #makedo {
+    position: absolute;
+      top: 240%;
+      left: 70%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #montenegr {
+    position: absolute;
+      top: 200%;
+      left: 30%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #romani {
+    position: absolute;
+      top: 65%;
+      left: 70%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  #szerbi {
+    position: absolute;
+      top: 125%;
+      left: 51%;
+  width:5%;
+  font-weight: bold;
+    font-size: 150%;
+    color: #487F2E;
+  }
+  
+  
+  .albania{
+    display: block;
+    position: absolute;
+      top: 145%;
+      left: 35%;
+  }
+  .bh{
+    display: block;
+    position: absolute;
+      top: 80%;
+      left: 16%;
+     
+  }
+  .bulgaria{
+    display: block;
+    position: absolute;
+      top: 130%;
+      left: 85%;
+    
+  }
+  .horvat{
+    display: block;
+    position: absolute;
+      top: 40%;
+      left: 15%;
+    
+  }
+  .magyar{
+    display: block;
+    position: absolute;
+      top: 15%;
+      left: 20%;
+    
+  }
+  .makedon{
+    display: block;
+    position: absolute;
+      top: 147%;
+      left: 70%;
+    
+  }
+  .montenegro{
+    display: block;
+    position: absolute;
+      top: 120%;
+      left: 20%;
+    
+  }
+  .romania{
+    display: block;
+    position: absolute;
+      top: 30%;
+      left: 70%;
+    
+  }
+  .szerbia{
+    display: block;
+    position: absolute;
+      top: 70%;
+      left: 45%;
+    
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #487F2E;
+    color: khaki;
+    text-align: center;
+  }
+  
+  .box{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+    background-color: rgb(189, 183, 107, .5);
+  }
+  .boxtxt{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 130%;
+  }
+</head>
+<body>
+
+<h1>Sonja Marinković Általános Iskola</h1>
+<ul>
+  <li id="li1"><a class="active" href="index.html">Kezdőlap</a></li>
+  <li><a href="hu.html">Használati utasítás</a></li>
+  <li><a href="szerzo.html">Szerző</a></li>
+</ul> </br></br>
+<p class="alcim">Szerbia Szomszédos országai</p>
+<p class="forditott">Földrajz</p>
+
+<div class="map">
+<img src="files/kepek/bg.jpg" class="map">
+<img src="files/kepek/albania.jpg" width="75" height="50"  class="albania" onmouseover="albania.play()" onmouseout="albania.pause()" >
+<img src="files/kepek/bh.jpg" width="75" height="50"  class="bh" onmouseover="bh.play()" onmouseout="bh.pause()" >
+<img src="files/kepek/bulgaria.jpg" width="75" height="50"   class="bulgaria" onmouseover="bulgaria.play()" onmouseout="bulgaria.pause()">
+<img src="files/kepek/horvat.jpg" width="75" height="50"  class="horvat" onmouseover="horvat.play()" onmouseout="horvat.pause()">
+<img src="files/kepek/magyar.jpg" width="75" height="50"  class="magyar" onmouseover="magyar.play()" onmouseout="magyar.pause()">
+<img src="files/kepek/makedon.jpg" width="75" height="50"  class="makedon" onmouseover="makedon.play()" onmouseout="makedon.pause()">
+<img src="files/kepek/montenegro.jpg" width="75" height="50"  class="montenegro" onmouseover="montenegro.play()" onmouseout="montenegro.pause()">
+<img src="files/kepek/romania.jpg" width="75" height="50"  class="romania" onmouseover="romania.play()" onmouseout="romania.pause()">
+<img src="files/kepek/szerbia.jpg" width="75" height="50"  class="szerbia" onmouseover="szerbia.play()" onmouseout="szerbia.pause()">
+
+</div>
+
+
+
+<p id="albani" onclick="myFunction1(this.id)" >Albánia</p>
+<p id="bh" onclick="myFunction2(this.id)">Bosznia-Hercegovina</p>
+<p id="bulgari" onclick="myFunction3(this.id)" >Bulgária</p>
+<p id="horva" onclick="myFunction4(this.id)">Horvátország</p>
+<p id="magya" onclick="myFunction5(this.id)">Magyarország</p>
+<p id="makedo" onclick="myFunction6(this.id)">Macedónia</p>
+<p id="montenegr" onclick="myFunction7(this.id)">Montenegró</p>
+<p id="romani" onclick="myFunction8(this.id)">Románia</p>
+<p id="szerbi" onclick="myFunction9(this.id)">Szerbia</p>
+
+<audio id="albania" src="files/himnusz/albania.mp3" preload="auto"></audio>
+<audio id="bh" src="files/himnusz/bh.mp3" preload="auto"></audio>
+<audio id="bulgaria" src="files/himnusz/bulgaria.mp3" preload="auto"></audio>
+<audio id="horvat" src="files/himnusz/horvat.mp3" preload="auto"></audio>
+<audio id="magyar" src="files/himnusz/magyar.mp3" preload="auto"></audio>
+<audio id="makedon" src="files/himnusz/makedon.mp3" preload="auto"></audio>
+<audio id="montenegro" src="files/himnusz/montenegro.mp3" preload="auto"></audio>
+<audio id="romania" src="files/himnusz/romania.mp3" preload="auto"></audio>
+<audio id="szerbia" src="files/himnusz/szerbia.mp3" preload="auto"></audio>
+
+<script type="text/javascript" src="files/java.js">
+
+var x;
+function play() {
+  audio = document.getElementById(x);
+  audio.play();
+}
+
+function myFunction1(clicked_id) {
+ var a= window.open("", "", "width=500,height=500");
+a.document.write("<body style="background-color:khaki;"><h1 style="color:#487F2E;text-align:center;">Albánia</h1>");
+a.document.write("<p style="text-align:center;">Fővárosa: Tirana  </br>  Népesség: 3 020 209 fő   </br> Népsűrűség: 98 fő/km² </br>   Terület: 28 748 km²</p>");
+a.document.write("</body>");
+}
+
+</script>
+
+<footer>
+  <p>CopyRight@ Sonja Marinković Általános Iskola</p>
+</footer>
+</body>
+</html>' id="3">
+<input type="hidden" value='
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style2.css">
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 100px;
+  margin-left: 400px;
+}
+.text {
+  color: #3F923A;
+  font-size: 30px;
+  padding: 90px 12px;
+  position: absolute;
+  bottom: 0px;
+  top:0px;
+  margin-left: 600px;
+  width: 30%;
+  text-align: center;
+  background-color: #A7E4B1;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:#3F923A;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+.active, .dot:hover {
+  background-color: #A7E4B1;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+* {
+  box-sizing: border-box;
+}
+body
+{
+	background-color: #F5F996;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #A7E4B1;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 250px;
+}
+.topnav a:hover {
+  background-color: #DBF4DF;
+  color: black;
+}
+.topnav a.active {
+  background-color: #3F923A;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #3F923A;
+  color: white;
+}
+h1{
+color:#3F923A;
+text-align: center;
+font-size: 40px;
+}
+.left{
+color:#3F923A;
+font-size: 40px;
+margin-left: 200px;
+}
+
+<h1>Osnovna škola "Sonja Marinkovic"</h1>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Kezdolap</a>
+  <a href="Szerzorol.html">szerzorol</a>
+  <a href="Hasznalati utmutato.html">Hasznalati utmutato</a>
+  <a href="javascript:void(0);" class="icon">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="left" style="float:left">
+<p><b>P</b></p>
+<p><b>I</b></p>
+<p><b>C</b></p>
+<p><b>A</b></p>
+<p><b>S</b></p>
+<p><b>S</b></p>
+<p><b>O</b></p>
+</div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+    <img width="600px" height="500px" src="kepek/001.jpg">
+      <div class="text"><b>The Old Guitarist,just after the suicide death of Picasso"s close friend, Casagemas</b> <br> Pablo Picasso <br> <b><i>1903</i></b></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+     <img width="600px" height="500px" src="kepek/002.jpg">
+     <div class="text"> <b>he figure on the left is thought to be Marie-Thérèse Walter, the twenty-three-year-old woman who gave birth to Picasso"s daughter Maïa in 1935  </b> <br> Pablo Picasso <br> <b><i>1934</i></b> </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+     <img width="600px" height="500px" src="kepek/003.jpg">
+      <div class="text"><b>After experimenting with a variety of styles in the year following his arrival in Paris, Picasso developed a style properly his own in autumn 1901.</b> <br> Pablo Picasso <br> <b><i>1917</i></b></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+       <img width="600px" height="500px" src="kepek/004.jpg">
+      <div class="text"><b>Girl on a Ball or Young Acrobat on a Ball is a 1905 oil on canvas painting by Pablo Picasso, which he produced during his Rose Period.</b> <br> Pablo Picasso <br> <b><i>1905</i></b></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img width="600px" height="500px" src="kepek/005.jpg">
+      <div class="text"><b>Le petit picador jaune (English: The little yellow bullfighter) is an oil on wood painting by the Spanish artist Pablo Picasso, which he created in 1889 at the age of eight</b> <br> Pablo Picasso <br> <b><i>1889</i></b></div>
+    </div>
+    </div>
+<br>
+
+<div class="dot-pos" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+<br>
+
+
+<br></br>
+<footer>
+  <p>Copyright © Osnovna škola "Sonja Marinkovic"</p>
+</footer>
+<script type="text/javascript" src="js/dots.js"></script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</body>
+</html> 
+
+<STYLE 1 A MASIK HTMLEKRE>
+  * {
+  box-sizing: border-box;
+}
+body
+{
+	background-color: #F5F996;
+}
+.topnav {
+  display: flex!important;
+  justify-content:center;
+  overflow: hidden;
+  background-color: #A7E4B1;
+  align-items: center;
+}
+.topnav a {
+  
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 250px;
+}
+.topnav a:hover {
+  background-color: #DBF4DF;
+  color: black;
+}
+.topnav a.active {
+  background-color: #3F923A;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #3F923A;
+  color: white;
+}
+h1,p{
+color: #3F923A;
+}' id="4">
+<input type="hidden" value='<html>
+    <head>
+        
+        <title>
+            ZeneKultura
+        </title>
+
+      
+
+    </head>
+        <script src="Style/js.js">
+            var audio;
+function play(x) {
+    audio = document.getElementById(x);
+    audio.play();
+}
+
+            
+ul {
+  display: flex!important;
+justify-content:center;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(197, 253, 133);
+}
+
+li {
+  float:left;
+  
+}
+
+li a {
+  display: block;
+  color:#476832;
+  text-align: center;
+  width: 350px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+  
+  .active {
+      background-color: #476832;
+      color: rgb(253, 255, 146);
+  }
+  body {
+ background-color: rgb(253, 255, 146);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+   overflow-x: hidden;
+  }
+  table, th, td{
+    border:0.5px solid #000000;
+    text-align: center;
+    margin-left:600px;
+    margin-right: auto;
+   
+    } 
+    th{
+        background-color:  #476832;
+        color:rgb(253, 255, 146) ;
+        
+    }
+   
+    img{
+        
+        width: 45px;
+        height: 40px;
+        
+        
+    }
+    footer{
+        text-align: center;
+        background-color:#476832;
+        color:rgb(253, 255, 146);
+        height: 40px;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        margin-bottom: 10px;
+       
+    } 
+    .vert p{
+      font-style: oblique;
+      margin-left: 40px;
+      writing-mode:vertical-lr;
+      text-orientation: upright;
+      float:left;
+    }
+
+        </script>
+        <link rel="stylesheet" href="Style/css.css">
+        <audio src="Style/Hangok/gitar.mp3" id="gitar"></audio>
+        <audio src="Style/Hangok/hegedu.mp3" id="hegedu"></audio>
+        <audio src="Style/Hangok/zongora.mp3" id="zongora"></audio>
+        <audio src="Style/Hangok/dob.mp3" id="dob"></audio>
+        <audio src="Style/Hangok/harmonika.mp3" id="harmonika"></audio>
+        <audio src="Style/Hangok/sax.mp3" id="sax"></audio>
+    <body>
+
+        <h1 style="text-align: center; font-size: 50px; color: #476832">Sonja Marinkovic Általános iskola</h1>
+        <ul>
+            <li><a href="index.html" class="active">Kezdő oldal</a></li>
+            <li><a href="szerzorol.html">A Szerzőről</a></li>
+            <li><a href="hasznalat.html">Használati</a></li>
+        </ul>
+       
+        <br><br><br>
+        <h2 style="text-align: center; font-size: 35px; color: #476832">A hangszerek hangjai</h2>
+       <div class="vert">
+           <p style="font-size:29px">Zene kultúra</p>
+       </div>
+
+
+        
+        <table>
+            <tr>
+                <th style="width: 225px;">Hangszer elnevezése</th>
+                <th style="width: 225px">Hangszer képe</th>
+                <th style="width: 225px">hangszer hangja</th>
+            </tr>
+            <tr>
+                <td style="width: 225px">Elektronikus gitár</td>
+                <td style="width: 225px"><img src="Style/kepek/guitar.png"  alt="guitar1" ></td>
+                <td style="width: 225px"><img src="Style/kepek/sound.png"onmouseover="gitar.play()" onmouseout="gitar.pause()" alt="hang"><br />
+                    <a href="https://hu.wikipedia.org/wiki/Elektromos_git%C3%A1r" target="_blank">Tudj meg többet!</a></td>
+            </tr>
+            <tr>
+                <td style="width: 225px">Hegedű</td>
+                <td style="width: 225px"><img src="Style/kepek/hegedu.png" alt="hegedu" ></td>
+                <td style="width: 225px"><img src="Style/kepek/sound.png"onmouseover="hegedu.play()" onmouseout="hegedu.pause()" alt="hang">
+                    <br />
+                    <a href="https://hu.wikipedia.org/wiki/Heged%C5%B1" target="_blank">Tudj meg többet!</a></td>
+            </tr>
+            <tr>
+                <td style="width: 225px">Zongora</td>
+                <td style="width: 225px"><img src="style/kepek/piano.png" alt="piano"></td>
+                <td style="width: 225px"><img src="Style/kepek/sound.png"onmouseover="zongora.play()" onmouseout="zongora.pause()" alt="hang">
+                    <br />
+                    <a href="https://hu.wikipedia.org/wiki/Zongora" target="_blank">Tudj meg többet!</a> </td>
+            </tr>
+            <tr>
+                <td style="width: 225px">Dob</td>
+                <td style="width: 225px"><img src="style/kepek/drum.png" alt="drum"></td>
+                <td style="width: 225px"><img src="Style/kepek/sound.png"onmouseover="dob.play()" onmouseout="dob.pause()" alt="hang">
+                    <br />
+                    <a href="https://hu.wikipedia.org/wiki/Dob_(hangszer)" target="_blank">Tudj meg többet!</a></td>
+            </tr>
+            <tr>
+                <td style="width: 225px">Harmonika</td>
+                <td style="width: 225px"><img src="style/kepek/harmonika.png"></td>
+                <td style="width: 225px"><img src="Style/kepek/sound.png"onmouseover="harmonika.play()" onmouseout="harmonika.pause()"  alt="hang">
+                    <br />
+                    <a href="https://hu.wikipedia.org/wiki/Harmonika" target="_blank">Tudj meg többet!</a></td>
+            </tr>
+            <tr>
+                <td style="width: 225px">Szaxofon</td>
+                <td style="width: 225px"><img src="Style/kepek/saxophone.png"</td>
+                <td style="width: 225px"><img src="Style/kepek/sound.png"onmouseover="sax.play()" onmouseout="sax.pause()"  alt="hang">
+                    <br />
+                    <a href="" target="popup" onclick=" var a= window.open("https://hu.wikipedia.org/wiki/Szaxofon","","width=500px,height=500px")">Tudj meg többet!</a></td>
+            </tr>
+        </table>
+  
+        <footer>
+            <p class="text12">Copyright © Altalanos Iskola "Sonja Marinkovic"</p>
+        </footer>
+    </body>
+</html>' id="5">
+<input type="hidden" value='  protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Vendegkonyv;Integrated Security=True");
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand("INSERT INTO Benyomas VALUES (@nev, @email, @komment, @datum)", con);
+                cmd.Parameters.AddWithValue("@nev", TextBox1.Text);
+                cmd.Parameters.AddWithValue("@email", TextBox2.Text);
+                cmd.Parameters.AddWithValue("@komment", TextBox3.Text);
+                DateTime datum = DateTime.Now;
+                cmd.Parameters.AddWithValue("@datum", datum);
+
+                if (cmd.ExecuteNonQuery() > -1)
+                    Response.Write("<script>alert("Sikeres beírás!")</script>");
+                else
+                    Response.Write("<script>alert("Sikertelen beírás!")</script>");
+
+            }
+            catch (SqlException)
+            {
+                Response.Write("<script>alert("Túl hosszú adatokat vitt be.");</script>");
+            }
+            catch (Exception)
+            {
+                Response.Write("<script>alert("Hiba történt a bevitelkor.");</script>");
+            }
+            finally
+            {
+                con.Close();
+
+            }
+
+        }
+    }
+}' id="8">
+<input type="hidden" value='    List<Katalogus> lista = new List<Katalogus>();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                FilldDDL();
+                FillGrid();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            FillGrid();
+        }
+
+        protected void FillOsztaly()
+        {
+            string sor;
+            StreamReader reader = new StreamReader(Server.MapPath("~/katalogus.txt"));
+            while((sor=reader.ReadLine())!= null)
+            {
+                Katalogus item = new Katalogus();
+                string[] line = sor.ToString().Split("|");
+                if (line.Length < 2)
+                {
+                    break;
+                }
+
+                item.Eloado = line[0].Trim();
+                item.Albumcime = line[1].Trim();
+                item.Mufaj = line[2].Trim();
+                item.Kiadaseve = line[3].Trim();
+                item.Kiadohaz = line[4].Trim();
+                item.Boritokep = line[5].Trim();
+               // item.Boritokep = "~"+line[5].Trim();
+
+                lista.Add(item);
+            }
+            reader.Close();
+        }
+
+        protected void FilldDDL()
+        {
+            FillOsztaly();
+            DropDownList1.Items.Add(" -Valaszd ki a mufajt !- ");
+            DropDownList1.Items.AddRange(lista.Select(i => new ListItem(i.Mufaj)).Distinct().ToArray());
+            DropDownList2.Items.Add(" -Valaszd ki a kiadas evet !- ");
+            DropDownList2.Items.AddRange(lista.Select(i => new ListItem(i.Kiadaseve)).Distinct().ToArray());
+        }
+
+        protected void FillGrid()
+        {
+            FillOsztaly();
+            List<Katalogus> eredmeny = lista;
+            if(TextBox1.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Eloado.Contains(TextBox1.Text));  
+            }
+            if (TextBox2.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Albumcime.Contains(TextBox2.Text));
+            }
+            if(DropDownList1.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Mufaj.Contains(DropDownList1.SelectedValue));
+            }
+            if (DropDownList2.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Kiadaseve.Contains(DropDownList2.SelectedValue));
+            }
+            if (TextBox3.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Kiadohaz.Contains(TextBox3.Text));
+            }
+            GridView1.DataSource = eredmeny;
+            GridView1.DataBind();
+        }
+    }
+}' id="9">
+<input type="hidden" value='  SqlConnection con = new SqlConnection(WebConfigurationManager.ConnectionStrings["adatbazis"].ConnectionString);
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                DropDownList1.Items.Add("Angol -> Szerb");
+                DropDownList1.Items.Add("Szerb -> Angol");
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand kereses;
+
+                if (DropDownList1.SelectedIndex == 0)
+                    kereses = new SqlCommand("SELECT Szerb, Leiras FROM Szotar WHERE Angol = @szo", con);
+                else
+                    kereses = new SqlCommand("SELECT Angol, Leiras FROM Szotar WHERE Szerb = @szo", con);
+
+                kereses.Parameters.AddWithValue("@szo", TextBox1.Text);
+        
+                SqlDataReader reader = kereses.ExecuteReader();
+
+                if (reader.HasRows)
+{
+                    while (reader.Read())
+                    {
+                        Label4.Text = reader[0].ToString(); //lefordĂ­tott szĂł
+                        Label6.Text = reader[1].ToString(); //leĂ­rĂĄs
+                    }
+                }
+                else
+                {
+                    Label4.Text = "Nincs ilyen szĂł a szĂłtĂĄrban.";
+                    Label6.Text = "";
+                }
+                reader.Close();
+                reader.Dispose(); //memĂłria, erĹforrĂĄs tisztĂ­tĂĄs
+
+            }
+            catch (Exception error)
+            {
+                throw error;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+    }
+} 
+
+public partial class bevitel : System.Web.UI.Page
+    {
+        SqlConnection con = new SqlConnection(WebConfigurationManager.ConnectionStrings["adatbazis"].ConnectionString);
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TextBox1.Text))
+                Response.Write("<script> alert ("Ărj angol szavat az elsĹ mezĹbe!") </script>");
+            else if (string.IsNullOrEmpty(TextBox2.Text))
+                Response.Write("<script> alert ("Ărj szerb szavat a mĂĄsodik mezĹbe!") </script>");
+            else
+            {
+
+                try
+                {
+                    con.Open();
+                    SqlCommand bevitel = new SqlCommand("INSERT INTO Szotar(Angol,Szerb,Leiras) VALUES(@angol,@szerb,@leiras)", con);
+                    bevitel.Parameters.AddWithValue("@angol", TextBox1.Text);
+                    bevitel.Parameters.AddWithValue("@szerb", TextBox2.Text);
+                    bevitel.Parameters.AddWithValue("@leiras", TextBox3.Text);
+
+                    if (bevitel.ExecuteNonQuery() > 0)
+                        Response.Write("<script> alert ("Sikeres bevitel!") </script>");
+                    else
+                        Response.Write("<script> alert ("Sikertelen bevitel!") </script>");
+                }
+                catch (Exception error)
+                {
+                    throw error;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+        }
+    }
+}
+message.txt
+4 KB' id="10">
+<input type="hidden" value='<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="CSS/style.css">
+body{
+	background-image: url("../Kepek/felho.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#cim{
+	text-align:center;
+	color: #ff6600;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  width:40%;
+  margin-left:30%;
+}
+
+li {
+  float: left;
+  width:33%;
+}
+#menu2{
+	  border-left-style:solid;
+  border-right-style:solid;
+  border-width:1px;
+  border-color:red;
+}
+li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active{
+	color:white;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: #ff6600;
+}
+
+.div1{
+	width:40%;
+	margin-left:30%;
+	margin-top:2%;
+	background-color: #ffffffb9;
+}
+
+.form1{
+	display: inline-block;
+}
+#city{
+	width:150%;
+}
+
+.iframe{
+	width: 60%;
+	margin-top:2%;
+	margin-left:20%;
+	height:600px;
+	margin-bottom:5%;
+}
+
+
+
+</head>
+<body>
+<h1 id="cim">Turisztikai ügynökség "Planinar"</h1>
+<ul>
+  <li><a class="active" href="index.html">Kezdőoldal</a></li>
+  <li id="menu2"><a href="szerzo.html">Szerzőről</a></li>
+  <li><a href="hasznalati.html">Használati utasitás</a></li>
+</ul>
+
+
+<div class="div1">
+<span style="display: inline-block; margin-left:40%; margin-top:5%; font-weight:bold;">Válaszd ki a várost: &nbsp;&nbsp;</span>
+ <form action="#" class="form1">
+      <select name="varosok" id="city" onchange="myFunction(this)">
+        <option value="beograd">Beograd</option>
+        <option value="cacak">Čačak</option>
+        <option value="kopaonik">Kopaonik</option>
+        <option value="kikinda">Kikinda</option>
+        <option value="novi-pazar">Novi Pazar</option>
+        <option value="valjevo">Valjevo</option>
+        <option value="nis">Niš</option>
+        <option value="novi-sad">Novi Sad</option>
+        <option value="subotica">Subotica</option>
+		<option value="zlatibor">Zlatibor</option>
+      </select>
+</form>
+<iframe class="iframe" src="https://naslovi.net/vremenska-prognoza/beograd" name="iframe_name"></iframe>
+</div>
+<p style="color:#ff6600; text-align:center;">&copy;Turistička agencija "Planinar"</p>
+<script type="text/javascript" src="JS/javascript.js">
+  var myWindow;	
+var status=0;
+
+function closeWin() {
+  myWindow.close();
+}
+function myFunction(obj){
+var varos = obj.value;
+document.getElementsByName("iframe_name")[0].src="https://naslovi.net/vremenska-prognoza/"+varos;
+var text="";
+switch(varos){
+case "beograd":varos="Belgrád";text="Avala-torony</br>,Virágház</br>,Gárdos torony</br>,Nikola Tesla Múzeum</br>,Crkva Svetog Marka</br>,Knez Mihailova út</br>,Szent Száva-templom</br>,Ada Ciganlija</br>,Skadarlija út</br>,Belgrád erődítménye...";break;
+case "cacak":varos="Čačak";text="Ovčar-Kablar-szurdok</br>,Szent Miklós-kolostor</br>,A látogatás kolostora</br>,Nemzeti Múzeum</br>,Umetnička Galéria „Nadežda Petrović”</br>,Krisztus felemelkedésének temploma</br>,Spomenik Stepi Stepanoviću</br>,Banja Gornja Trepča...";break;
+case "kopaonik":varos="Kopaonik";text="Nemzeti Park</br>,Hegyi központ...";break;
+case "kikinda":varos="Kikinda";text="Assisi Szent Ferenc Katolikus Plébánia</br>,Nemzeti Múzeum</br>,Szentháromság Kolostor</br>,Suvača...";break;
+case "novi-pazar":varos="Novi Pazar";text="Stari Ras</br>,Sopoćani kolostor</br>,đurđevi Stupovi</br>,Szent Péter és Pál apostolok temploma</br>,Novi Pazar erődje</br>,Isabegov Hamam</br>,Stara Čaršija</br>,Muzej Ras</br>,Novopazarska Banja...";break;
+case "valjevo":varos="Valjevo";text="Tešnjar negyed</br>,Nenadović torony</br>,A "Muszlim-ház"</br>,A Valjevói Nemzeti Múzeum</br>,Knez Miloša utca</br>,Vidrak</br>,Gradac folyó...";break;
+case "nis":varos="Nis";text="Niš erőd</br>,Koponya torony</br>,Mediana</br>,Régészeti terem</br>,Crveni Krst koncentrációs tábor</br>,Bubanj Emlékhely</br>,Latin-templom a Gornji Matejevacban</br>,Tisztviselőház</br>,Szentháromság székesegyház...";break;
+case "novi-sad":varos="Novi Sad";text="Petrovaradin erőd</br>,Újvidék Štrand</br>,Fruška Gora</br>,Újvidéki zsinagóga</br>,Duna-park</br>,Vajdasági Múzeum</br>,A Mária-templom neve</br>,Vladičanski Dvor</br>,Szent György-székesegyház</br>,Matica Srpska Galéria</br>,EXIT Fesztivál...";break;
+case "subotica":varos="Subotica";text="Szabadka Városháza</br>,Szabadság tér</br>,Avila székesegyház Szent Theresa</br>,Szabadka zsinagóga</br>,Városi Múzeum</br>,Modern művészeti galéria</br>,Szerb Ortodox Egyház</br>,Raichle palota</br>,Palić-tó...";break;
+case "zlatibor":varos="Zlatibor";text="Stopich-barlang</br>,Régi falu</br>,Shargan nyolc</br>,szilícium</br>,Drvengrad...";break;
+}
+	if(status==1){closeWin();status=0;}
+	myWindow = window.open("", "myWindow", "width=350,height=300,left=1000,top=200,status=no,toolbar=no,titlebar=no");
+	myWindow.document.write("<html><head>");
+	myWindow.document.write("<meta charset="UTF-8">");
+    myWindow.document.write("<link rel="stylesheet" href="CSS/style4.css" type="text/css" />");
+    myWindow.document.write("</head><body>");
+    myWindow.document.write("<h1>"+varos+"</h1>");
+	myWindow.document.write("<p>"+text+"</p>");
+	myWindow.document.write("<h1></h1>");
+    myWindow.document.write("</body></html>");
+	status=1;
+}
+</script>
+</body>
+</html>
+
+
+
+' id="11">
+<input type="hidden" value='  List<nevjegyadatokcs> lista = new List<nevjegyadatokcs>();
+        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                FillGrid();
+                FillDDL();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            FillGrid();
+        }
+        protected void FillOszaly()
+        {
+            string sor;
+            StreamReader reader = new StreamReader(Server.MapPath("~/nevjegyzek.txt"));
+            while ((sor=reader.ReadLine()) != null)
+            {
+                nevjegyadatokcs item = new nevjegyadatokcs();
+                string[] line = sor.ToString().Split("|");
+                if (line.Length < 2)
+                {
+                    break;
+                }
+                item.Id = line[0].Trim();
+                item.Nev = line[1].Trim();
+                item.Vezeteknev = line[2].Trim();
+                item.Cim = line[3].Trim();
+                item.Telefonszam = line[5].Trim();
+                item.Email = line[6].Trim();
+                item.Helyseg = line[4].Trim();
+                lista.Add(item);
+            }
+            reader.Close();
+        }
+
+        protected void FillDDL()
+        {
+            FillOszaly();
+            DropDownList1.Items.Add(" ");
+            DropDownList1.Items.AddRange(lista.Select(i => new ListItem(i.Helyseg)).Distinct().ToArray());
+        }
+
+        protected void FillGrid()
+        {
+            FillOszaly();
+            List<nevjegyadatokcs> eredmeny = lista;
+            if (TextBox1.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Nev.Contains(TextBox1.Text));
+            }
+            if (TextBox2.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Vezeteknev.Contains(TextBox2.Text));
+            }
+            if (TextBox3.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Cim.Contains(TextBox3.Text));
+            }
+            if (TextBox4.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Telefonszam.Contains(TextBox4.Text));
+            }
+            if (TextBox5.Text != "")
+            {
+                eredmeny = eredmeny.FindAll(i => i.Email.Contains(TextBox5.Text));
+            }
+            if (DropDownList1.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Helyseg.Contains(DropDownList1.SelectedValue));
+            }
+            GridView1.DataSource = eredmeny;
+            GridView1.DataBind();
+        }
+    }
+  <asp:GridView ID="GridView1" runat="server" Width="520px" AutoGenerateColumns="false">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Sorszám" />
+                 <asp:BoundField DataField="Nev" HeaderText="Név" />
+                 <asp:BoundField DataField="Vezeteknev" HeaderText="Vezetéknév" />
+                 <asp:BoundField DataField="Cim" HeaderText="Cím" />
+                 <asp:BoundField DataField="Telefonszam" HeaderText="Telefonszám" />
+                 <asp:BoundField DataField="Email" HeaderText="E-mail" />
+                 <asp:BoundField DataField="Helyseg" HeaderText="Helység" />
+            </Columns>
+            <EmptyDataTemplate>
+                Nincs találat !
+            </EmptyDataTemplate>
+                        </asp:GridView>
+}' id="13">
+<input type="hidden" value='  string targetDirectory;
+        List<TvProgram> osztaly = new List<TvProgram>();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            targetDirectory = Server.MapPath("~/programSema/");
+            if (!IsPostBack) 
+            {
+                //dropdownlistek feltoltese
+                FillDatum();
+                FillMUsorTipus();
+                FillGrid();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            FillGrid();
+        }
+
+        protected void FillOsztaly(string filePath)
+        {
+            //List<TvProgram> osztaly foltoltese 
+            //string filePath - parameter, melyik txt fajl tartalmat olvassuk ki
+
+            string sor;
+
+            using (StreamReader sr = new StreamReader(filePath))
+            {
+                while((sor = sr.ReadLine())!=null)
+                {
+                    TvProgram item = new TvProgram();
+                    string[] line = sor.ToString().Split("|");
+                    if (line.Length < 2)
+                    {
+                        break;
+                    }
+
+                    item.Ido = line[0].Trim();
+                    item.Cim = line[1].Trim();
+                    item.Tipus = line[2].Trim();
+                    item.TipusIkon = "~"+line[3].Trim();
+
+                    osztaly.Add(item);
+
+                }
+            }
+        }
+        protected void FillDatum()
+        {
+            //dropdownlist feltoltese a txt fajlok neve alapjan
+            //tehat datumokkal
+            String[] Files = Directory.GetFiles(targetDirectory, "*.txt");
+
+            for (int x = 0; x < Files.Length; x++)
+            {
+                Files[x] = Path.GetFileNameWithoutExtension(Files[x]);
+            }
+            DropDownList1.DataSource = Files;
+            DropDownList1.DataBind();
+        }
+
+        protected void FillMUsorTipus()
+        {
+            string[] musortipusok = { "", "film", "hírműsor", "sorozat", "vásárlás", "bábfilm", "beszélgetős műsor", "ezotéria", "magazin műsor", "ismeretterjesztő", "kvíz", "szórakoztató műsor", "rajzfilmösszeállítás", "riport", "kabaré", "rajzfilm" };
+            foreach (string item in musortipusok)
+            {
+                DropDownList2.Items.Add(item);
+            }
+
+        }
+        protected void FillGrid()
+        {
+            List<TvProgram> eredmeny = osztaly;
+
+            if (DropDownList1.SelectedIndex > -1)
+            {
+                FillOsztaly(targetDirectory+DropDownList1.SelectedItem.ToString()+".txt");
+            }
+
+            if (DropDownList2.SelectedIndex > -1)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Tipus.Contains(DropDownList2.SelectedValue));
+
+            }
+
+            GridView1.DataSource = eredmeny;
+            GridView1.DataBind();
+
+        }
+    }
+}
+	 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" >
+            <Columns>
+                <asp:BoundField DataField="Ido" HeaderText="Musorszoras ideje" />
+                <asp:BoundField DataField="Cim" HeaderText="Musor cime" />
+                <asp:ImageField DataImageUrlField="TipusIkon" HeaderText="Musor tipusa" />
+            </Columns>
+            <EmptyDataTemplate>
+                Nincs talalat!
+            </EmptyDataTemplate>
+        </asp:GridView>
+
+' id="14">
+<input type="hidden" value='  List<osztaly> lista = new List<osztaly>();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                FillDDL();
+                FillGrid();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            FillGrid();
+        }
+
+        protected void FillOsztaly()
+        {
+            string sor;
+            StreamReader reader = new StreamReader(Server.MapPath("~/webaruhaz.txt"));
+
+            while((sor=reader.ReadLine())!=null)
+            {
+                osztaly item = new osztaly();
+
+                item.Azonosito = sor.Substring(0, 6).Trim();
+                item.Elnevezes = sor.Substring(6, 25).Trim();
+                item.Gyarto = sor.Substring(31, 20).Trim();
+                item.Ram = sor.Substring(51, 5).Trim();
+                item.Processzor = sor.Substring(56, 15).Trim();
+                item.Kamera = sor.Substring(71, 10).Trim();
+                item.Kijelzo = sor.Substring(81, 5).Trim();
+                item.Kep = sor.Substring(91, 30).Trim();
+                item.Ar = sor.Substring(121, 10).Trim();
+
+                lista.Add(item);
+            }
+            reader.Close();
+
+
+        }
+
+        protected void FillDDL() //dropdownlist feltoltes
+        {
+            FillOsztaly();
+            DropDownList1.Items.Add("");
+            DropDownList2.Items.Add("");
+            DropDownList3.Items.Add("");
+            DropDownList4.Items.Add("");
+            DropDownList5.Items.Add("");
+
+
+            DropDownList1.Items.AddRange(lista.Select(i => new ListItem(i.Gyarto)).Distinct().ToArray());
+
+            //dropdownlist2 feltoltese
+            string[] ramok = { "512MB", "1GB", "1.5GB", "2GB", "3GB" };
+            foreach (string i in ramok)
+            {
+                DropDownList2.Items.Add(i);
+            }
+
+            DropDownList3.Items.AddRange(lista.Select(i => new ListItem(i.Processzor)).Distinct().ToArray());
+            DropDownList4.Items.AddRange(lista.Select(i => new ListItem(i.Kamera)).Distinct().ToArray());
+            DropDownList5.Items.AddRange(lista.Select(i => new ListItem(i.Kijelzo)).Distinct().ToArray());
+
+        }
+
+        protected void FillGrid() // gridview feltoltes
+        {
+            FillOsztaly();
+
+            List<osztaly> eredmeny = lista;
+
+            if(DropDownList1.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i=>i.Gyarto.Contains(DropDownList1.SelectedValue));
+            }
+            if (DropDownList2.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Ram.Contains(DropDownList2.SelectedValue));
+            }
+            if (DropDownList3.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Processzor.Contains(DropDownList3.SelectedValue));
+            }
+            if (DropDownList4.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Kamera.Contains(DropDownList4.SelectedValue));
+            }
+            if (DropDownList5.SelectedIndex > 0)
+            {
+                eredmeny = eredmeny.FindAll(i => i.Kijelzo.Contains(DropDownList5.SelectedValue));
+            }
+
+            GridView1.DataSource = eredmeny;
+            GridView1.DataBind();
+
+        }
+    }
+}
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false">
+            <Columns>
+                <asp:ImageField DataImageUrlField="Kep" HeaderText="Kép" ControlStyle-Width="200" />
+                <asp:BoundField DataField="Gyarto" HeaderText="Gyártó" />
+                <asp:BoundField DataField="Elnevezes" HeaderText="A termék neve" />
+                <asp:BoundField DataField="Ram" HeaderText="RAM memória" />
+                <asp:BoundField DataField="Processzor" HeaderText="Processzor" />
+                <asp:BoundField DataField="Kamera" HeaderText="Kamera" />
+                <asp:BoundField DataField="Kijelzo" HeaderText="Kijelző mérete" />
+                <asp:BoundField DataField="Ar" HeaderText="Ár" />
+
+            </Columns>
+            <EmptyDataTemplate>
+                Nincs talalat!
+            </EmptyDataTemplate>
+        </asp:GridView>
+' id="17">
+<input type="hidden" value='    szolgaltatas.WebService1SoapClient objektum = new szolgaltatas.WebService1SoapClient();
+
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //ciril-latin
+            TextBox2.Text = objektum.CirilbolLatin(TextBox1.Text);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //latin-ciril
+            TextBox1.Text = objektum.LatinbolCiril(TextBox2.Text);
+        }
+    }
+}
+  public class WebService1 : System.Web.Services.WebService
+    {
+        string[] lat_up = { "DŽ", "NJ", "LJ", "A", "B", "V", "G", "D", "Đ", "E", "Ž", "Z", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "Ć", "U", "F", "H", "C", "Č", "Š" };
+        string[] lat_low = { "dž", "nj", "lj", "a", "b", "v", "g", "d", "đ", "e", "ž", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "ć", "u", "f", "h", "c", "č", "š" };
+        string[] cir_up = { "Џ", "Њ", "Љ", "А", "Б", "В", "Г", "Д", "Ђ", "Е", "Ж", "З", "И", "Ј", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "Ћ", "У", "Ф", "Х", "Ц", "Ч", "Ш" };
+        string[] cir_low = { "џ", "њ", "љ", "а", "б", "в", "г", "д", "ђ", "е", "ж", "з", "и", "ј", "к", "л", "м", "н", "о", "п", "р", "с", "т", "ћ", "у", "ф", "х", "ц", "ч", "ш" };
+
+
+
+        [WebMethod]
+        public string CirilbolLatin(string tekst)
+        {
+            for (int i = 0; i < cir_low.Length; i++)
+            {
+                tekst = tekst.Replace(cir_low[i],lat_low[i]);
+                tekst = tekst.Replace(cir_up[i], lat_up[i]);
+            }
+
+            return tekst;
+
+        }
+
+        [WebMethod]
+        public string LatinbolCiril(string tekst)
+        {
+            for (int i = 0; i < lat_low.Length; i++)
+            {
+                tekst = tekst.Replace(lat_low[i], cir_low[i]);
+                tekst = tekst.Replace(lat_up[i], cir_up[i]);
+            }
+
+            return tekst;
+        }
+
+
+    }
+}
+' id="19">
+<input type="hidden" value='<DOCTYPE! html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/Style.css">
+#Tablazat {
+
+  border: 1px solid black;
+  border-collapse: collapse;
+  align: center;
+  width: 20%;
+  margin: auto;
+  margin-top: 115px;
+  
+  }
+  tr, th, td{
+  border: 1px solid black;
+  
+  
+  }
+  
+  h1{
+  text-align: center;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #00008B;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  .footer{
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00008B;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .footer a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  
+  
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+  
+</head>
+<body>
+<script src="JS/Js.js"></script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("Tablazat");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+<div class="navbar">
+  <a>Feladat B21</a>
+  <span style="color: white; font-size: 35px;">|</span>
+  <span style="color: white;">Táblázat sorbarendezése</span>
+</div>
+</br>
+</br>
+<header>
+<h1>Táblázat sorbarendezése</h1>
+</header>
+
+<table id="Tablazat">
+<tr>
+<th style="background-color: silver;"><a href="#" onClick="sortTable(0)">Sorszám</a></th>
+<th style="background-color: silver;"><a  href="#" onclick="sortTable(1)">Név</th>
+<th style="background-color: silver;"><a href="#" onclick="sortTable(2)">Vezetéknév</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Pera</td>
+<td>Mikic</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Mika</td>
+<td>Zikic</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Zika</td>
+<td>Peric</td>
+</tr>
+</table>
+
+<div class="footer">
+  <a>Köztársasági Statisztikai Hivatal</a>
+  <a style="float: right; text-decoration-line: underline;" href="Alkalmazasrol.html">Az alkalmazásról</a>
+</div>
+
+</body>
+
+</html>' id="21">
+<input type="hidden" value='<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" >
+      body{
+      background-color: antiquewhite;
+      }
+      .footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(96, 180, 248);
+      color: white;
+      text-align: left;
+
+
+      }
+      .header {
+      padding: 60px;
+      text-align: center;
+      background-color: rgb(96, 180, 248);
+      color: white;
+      font-size: 30px;
+      }
+      table, th, td {
+      border: 1px solid;
+      }
+      <title>Főoldal</title>
+    </head>
+  <body>
+    <div class="footer">
+      <H1>H1</H1>
+      <a href="guide.html" >Használati utasítás</a>
+      <br>
+        <a href="author.html" >Szerző</a>
+      </div>
+    <header>
+      <div class="header">
+        <H2 style="text-align: left;">B22</H2>
+      </div>
+    </header>
+    <div class="tablazat">
+
+
+      <table id="Tablazat">
+        <tbody>
+          <th>Ssz</th>
+          <th>Név</th>
+          <th>Vezetéknév</th>
+          <th>Iskola</th>
+          <th>Pontok</th>
+          </tr>
+          <tr>
+            <td class="gg"> 3.</td>
+            <td>Milan</td>
+            <td>Markovic</td>
+            <td>OŠ “Mika Antic”</td>
+            <td class="pont">73</td>
+          </tr>
+          <tr>
+            <td class="gg">5.</td>
+            <td>Jelena</td>
+            <td>Peric</td>
+            <td>OŠ “Vuk Karadžic”</td>
+            <td class="pont">68</td>
+          </tr>
+          <tr>
+            <td class="gg">1.</td>
+            <td>Pera</td>
+            <td>Mikic</td>
+            <td>OŠ “Vuk Karadžić”</td>
+            <td class="pont">54</td>
+          </tr>
+          <tr>
+            <td class="gg">4.</td>
+            <td>Ivan</td>
+            <td>Tosic</td>
+            <td>OŠ “Bubanjski heroji”</td>
+            <td class="pont">21</td>
+          </tr>
+          <tr>
+            <td class="gg">2.</td>
+            <td>Mika</td>
+            <td>Zikic</td>
+            <td>OŠ “Ivo Andrić”</td>
+            <td class="pont">42</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="gombok">
+      <button class="button" onclick="sortTable()">Sorba rendezés</button>
+      <button class="button" onclick="alternativ()">Páratlanok</button>
+      <button class="button" onclick="atmeno()">50 feletti</button>
+      <button class="button" onclick="alatti()">50 alatti</button>
+      <button class="button" onclick="torles()">Törlés</button>
+      <button class="button" onclick="sortTablee()">Sorba rendezés pontszámok alapján</button>
+
+
+
+    </div>
+    <script>
+      function sortTable() {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("Tablazat");
+      switching = true;
+      while (switching) {
+      switching = false;
+      rows = table.rows;
+      for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+	  rows[i].style.backgroundColor = "white";
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      if (Number(x.innerHTML) > Number(y.innerHTML)) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+                function alternativ()
+    {
+        var tblrows = document.getElementsByTagName("tr");
+        for(i=1;i<tblrows.length;i
+        if(i%2 != "0") tblrows=""[i=""].style.backgroundColor = "gray"
+        } 
+    }
+    function="" atmeno=""
+    var="" cell = "document.getElementsByTagName"
+    var="" i = "0"
+    while=""(cell=""[i=""] != undefined=""
+    if=""(!isNaN=""(cell=""[i=""].innerHTML=""
+    {
+        if=""(cell=""[i=""].innerHTML="" >
+        50)
+        {
+        cell[i].style.backgroundColor = "green";
+        }
+        }
+        i++;
+
+
+        }
+        }
+        function alatti(){
+        var cell = document.getElementsByClassName("pont");
+        var sor= document.getElementById("Tablazat");
+        var tabla = sor.rows;
+        var i = 0;
+        while(cell[i] != undefined){
+        if(!isNaN(cell[i].innerHTML))
+        {
+        if(cell[i].innerHTML < 50)
+        {
+            
+            cell[i].style.backgroundColor = "red";
+
+        }
+    }
+    i++;
+   
+
+    }
+}
+function torles(){
+    var cell = document.getElementsByTagName("td");
+   var tabla = document.getElementById("Tablazat");
+   var sor = tabla.rows;
+    var i = 0;
+    while(cell[i] != undefined){
+    if(!isNaN(cell[i].innerHTML))
+    {
+        if(cell[i].innerHTML > 50)
+        {
+            document.getElementById("Tablazat").deleteRow(i);
+        }
+    }
+   
+   i++;
+    }
+}
+function sortTablee() {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("Tablazat");
+      switching = true;
+     
+      while (switching) {
+        
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+       
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[4];
+          y = rows[i + 1].getElementsByTagName("TD")[4];
+          if (Number(x.innerHTML) < Number(y.innerHTML)) {
+        shouldSwitch = true;
+        break;
+          }
+        }
+        if (shouldSwitch) {
+         
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+    }
+
+
+    </script>
+
+  </body>
+</html>
+' id="22">
 
 <button style="color:#F8F8F8" onclick="myFunction2()">2</button>
 <button style="color:#F8F8F8" onclick="myFunction3()">3</button>
